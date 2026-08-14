@@ -3,3 +3,6 @@ My portfolio to document the process of learning electronics using an arduino an
 
 Index:
 1. Sonar Scanner
+  Code:
+  Sweep Video:
+  
