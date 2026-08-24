@@ -3,25 +3,28 @@ Servo-driven ultrasonic radar made with an Arduino Uno R3, an HC-SR04 ultrasonic
 The sensor sweeps across a 180° arc in 10° increments, taking a distance reading at each angle and creating a radar UI.
 
 Overview
-The project combines an actuator (servo) and sensor (ultrasonic sensor) into a combined system.
+The project combines an actuator (servo) and sensor (ultrasonic sensor) into a combined system and producing output through an LCD as well as creating a live output radar graphic using Processing.
 The servo rotates to a target angle before the sensor's reading can be reliable adding a sequencing issue to solve rather than just reading sensor output.
 
 Parts Used
 Arduino Uno R3
 HC-SR04 Ultrasonic Sensor
 SG90 Servo Motor
+LCD1602 Module
 Breadboard + Jumper Wires
-Mounting coupler to attach Sensor to Servo horn
+Potentiometer
+Rubber Bands (DIY solution for mounting)
+Mounting coupler to attach Sensor to Servo horn (Ideal mounting option, 3D printed part)
 
 Design Process
 1. Servo moved to target angle
 2. Wait for servo to settle
 3. Trigger ultrasonic sensor and measure return pulse
 4. Convert pulse into a distance
-5. Report angle and distance
+5. Report angle and distance -> Print to LCD and Processing
 6. Move to new angle and repeat sweeping from 0° - 180°.
 
-I built and tested the servo sweep and sensor readings separately then combined them once they worked independently to help troubleshoot any bugs
+I built and tested the servo sweep and sensor readings separately then combined them once they worked independently to help troubleshoot any bugs. I then combined code from a previous project for the LCD. 
 
 Technical Challenges
 After refactoring the code to create the sweepStep() function, the servo stopped functioning despite the angle printing correctly to serial. The for loop declared its own local angle variable which shadowed the global angle variable that sweepStep() actually read from. The loop updated a variable within the loop that the rest of the code couldn't see while the global one never changed. To fix this I removed the redeclaring angle locally and let the loop update the global directly.
