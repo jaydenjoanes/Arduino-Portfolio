@@ -61,7 +61,7 @@ The sensor is currently mounted to the servo horn using rubber bands as a DIY so
 
 
 ## Code
-
+Full Sketch: https://github.com/jaydenjoanes/Arduino-Portfolio/blob/72b9a3ba72db2a21cce5d18fbf861da1e259752f/sonic-scanner/sketch_ultrasonic_radar_27_07_26.ino
 
 
 ## Reflection
