@@ -4,7 +4,7 @@ Servo-driven ultrasonic radar made with an Arduino Uno R3, an HC-SR04 ultrasonic
 
 ## Overview
 
-The project combines an actuator (servo) and sensor (ultrasonic sensor) into a combined system, producing output through an LCD as well as a live output radar graphic using Processing. The servo has to rotate to a target angle before the sensor's reading can be reliable, adding a sequencing issue to solve rather than just reading sensor output.
+The project combines an actuator (servo) and sensor (ultrasonic sensor) into a combined system, producing output through an LCD. The servo has to rotate to a target angle before the sensor's reading can be reliable, adding a sequencing issue to solve rather than just reading sensor output.
 
 ## Parts Used
 
@@ -25,7 +25,7 @@ The project combines an actuator (servo) and sensor (ultrasonic sensor) into a c
 3. Trigger ultrasonic sensor and measure return pulse
 4. Convert pulse into a distance
 5. Report angle and distance → print to LCD and Processing
-6. Move to new angle and repeat, sweeping from 0°–180°
+6. Move to new angle and repeat, sweeping from 10°–170°
 
 I built and tested the servo sweep and sensor readings separately, then combined them once they worked independently to help troubleshoot any bugs. I then combined code from a previous project for the LCD.
 
@@ -64,4 +64,4 @@ Full Sketch: https://github.com/jaydenjoanes/Arduino-Portfolio/blob/72b9a3ba72db
 
 The most useful habit in this project wasn't any single fix — it was tracing suspicious behavior through concrete example values by hand before changing code, rather than guessing at a fix and seeing if it happened to work. Several bugs here (the ordering issue, the sync lag) looked confusing at first glance but became obvious once I wrote out exactly what value each variable held at each line and compared that against what I expected. I'd also, in hindsight, pass values like `angle` into functions as explicit parameters from the start rather than relying on globals — nearly every shadowing bug in this project stemmed from mixing the two approaches inconsistently.
 
-**Next steps:** confirm whether the SG90's behavior at 0°/180° is a genuine mechanical limit now that the sensor is mounted, calibrate angle-to-real-world direction, verify accuracy across the full sweep (not just a fixed position), finish the Processing radar UI, and source the 3D-printed coupler for a more permanent mount.
+**Next steps:** For future improvements, the mounting device and support for the scanner and servo could be 3D printed rather than a makeshift rubber band and blu-tack mount and support. The output could be through Processing to get an actual radar graphic. 
