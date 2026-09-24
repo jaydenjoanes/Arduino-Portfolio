@@ -56,10 +56,6 @@ A 16x2 LCD doesn't clear old characters automatically — printing `"90"` over a
 
 The sensor is currently mounted to the servo horn using rubber bands as a DIY solution and stabilised at the base with Blu-Tack, while a proper 3D-printed coupler remains the ideal long-term option.
 
-## Results
-
-
-
 ## Code
 Full Sketch: https://github.com/jaydenjoanes/Arduino-Portfolio/blob/72b9a3ba72db2a21cce5d18fbf861da1e259752f/sonic-scanner/sketch_ultrasonic_radar_27_07_26.ino
 
