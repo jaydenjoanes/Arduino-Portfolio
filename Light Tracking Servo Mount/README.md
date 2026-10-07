@@ -6,12 +6,12 @@ Servo tracks light using a voltage divider composed of 2 photoresistors and 2 re
 ## Overview
 
 ## Parts Used
-Arduino Uno R3
-2x Photoresistors
-2x Resistors
-SG90 Servo
-Breadboard
-Jumper Wires
+ - Arduino Uno R3
+ - 2x Photoresistors
+ - 2x Resistors
+ - SG90 Servo
+ - Breadboard
+ - Jumper Wires
 
 ## Design Process
 
