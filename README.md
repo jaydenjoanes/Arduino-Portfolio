@@ -2,5 +2,4 @@
 This repository serves as my portfolio for electronics work using an Arduino microcontroller. It will document my experience, the issues I face, what I learn from them and how each project can apply to real world engineering applications.
 # Contents - Ordered Chronologically
 ## 1. [Ultrasonic Scanner](https://github.com/jaydenjoanes/Arduino-Portfolio/tree/main/sonic-scanner) - Servo driven radar sweep with live LCD visualisation
-
-
+## 2. [Light-Tracking Servo Mount](https://github.com/jaydenjoanes/Arduino-Portfolio/blob/main/Light-Tracking%20Servo%20Mount) - Servo tracks light using photoresistors with a proportional controller
