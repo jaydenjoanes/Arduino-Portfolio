@@ -2,6 +2,14 @@
 
 Servo-driven ultrasonic radar made with an Arduino Uno R3, an HC-SR04 ultrasonic sensor and an SG90 servo motor. The sensor sweeps across a 180° arc in 10° increments, taking a distance reading at each angle and creating a radar UI.
 
+## Video
+
+
+https://github.com/user-attachments/assets/ece62ae5-3129-4198-99e5-d60452da4f09
+
+
+
+
 ## Overview
 
 The project combines an actuator (servo) and sensor (ultrasonic sensor) into a combined system, producing output through an LCD. The servo has to rotate to a target angle before the sensor's reading can be reliable, adding a sequencing issue to solve rather than just reading sensor output.
