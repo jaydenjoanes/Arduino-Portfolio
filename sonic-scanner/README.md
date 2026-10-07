@@ -5,7 +5,11 @@ Servo-driven ultrasonic radar made with an Arduino Uno R3, an HC-SR04 ultrasonic
 ## Video
 
 
-https://github.com/user-attachments/assets/ece62ae5-3129-4198-99e5-d60452da4f09
+
+
+
+https://github.com/user-attachments/assets/3ee2d83f-6247-41c2-bc5d-dc11c53df08d
+
 
 
 
